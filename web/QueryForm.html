@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Homework 11 - Query Form </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="javascript" type="text/javascript" src="datetimepicker2.js">
+            //Date Time Picker script- by TengYong Ng of http://www.rainforestnet.com
+            //Script featured on JavaScript Kit (http://www.javascriptkit.com)
+            //For this script, visit http://www.javascriptkit.com 
+        </script>
+    </head>
+    <body background="images/mountain_forest_range.PNG">
+        <br><br><br><br>
+        <form style="background-color: #FFFFFF"
+              action="http://localhost:8084/kepnang_hw11sql/QueryServlet" 
+              method=GET>
+          <fieldset>
+            <legend>BHC Query Form</legend>
+            <em> GREETINGS USER, please provide a date for this Query. </em>
+            <center>
+                <b><i> Please enter a beginning date [mm-dd-yyyy] </i></b> <br>
+                <input name="dateInfo" id="bhcCalendar" type="text" size="12"/>
+                <a href="javascript:NewCal('bhcCalendar','mmddyyyy')">
+                                <img src="images/cal.gif" width="16" 
+                                     height="16" border="0" 
+                                     alt="Pick a date">
+                </a>
+
+                <br><br>
+                <input type="SUBMIT" value = "Submit Query"/>
+                <br>
+            </center>
+          </fieldset> 
+        </form>
+    </body>
+</html>
